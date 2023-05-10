@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>21оДНО</title>
+  </head>
+
+  <body>
+    
+    <main class="main-container text-centr">
+      
+      <div class="btn-menu">
+        
+        <h1 class="game-name"> <strong>2 1 o D N O</strong></h1>
+        <p class="indent-button">
+          <button class="btn" class btn-menu btn-out-line-start>
+           <a class="link-text-color" href="#mydiv" style="text-decoration: none"> Раздавай!</a>
+          </button>
+        </p>
+        <p class="indent-button">
+          
+          <button type="button" class="btn btnPrimary" onclick="modal('myModal2')">Правила</button>
+          <div id="myModal2" class="modal" style="display: none;"">
+            <div class="modalContent modalPrimary">
+              <div class="modalHeader">
+                <span class="modalClose" data-close="true" title="Close">&times;</span>
+                <h2 class="rul-modal">Правила игры</h2> 
+              </div>
+              <div class="modalBody">
+                <p>Тебе необходимо набрать 21 балл, либо больше баллов, чем набрал Диллер. 
+                  Если ты набрал больше 21го балла, а Диллер до 21го балла или 21 балл - ты проиграл. 
+                  У Диллера такие же условия. Если у вас с диллером равное количество баллов - это ничья. 
+                  Если у обоих перебор - это ничья.
+                  Карты с цифрами соответствуют полученным баллам, Король, Валет и Дама по 10 баллов. 
+                  Туз равняется 1 баллу, но при комбинации с 10ой, Королём, Вальтом и Дамой, он будет равен 11 баллам. 
+                  <h3 class="good-luck">Удачи!</h3> </p>
+              </div>
+              <div class="modalFooter">
+                <h2 class="memory-modal" >Запомнил?</h2> 
+                <div class="memory-modal-btn">
+                  <button type="button" class="btn" data-close="true">Да</button>
+                  <button type="button" class="btn btnInfo"><a class="link-text-color" href="https://blog.eldorado.ru/publications/ot-meditatsiy-do-shokolada-30-sovetov-kak-uluchshit-pamyat-33599" style="text-decoration: none"> Нет</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </p>
+        <p>
+          <button class="btn" class btn-menu btn-out-line-exit>
+            <a class="link-text-color" href="https://www.chess.com/ru" style="text-decoration: none " >Я на деньги не играю!</a>
+          </button>
+        </p>
+      
+      </div>
+    </main>
+    <div class="container">
+      <div class="flex-row-1">
+        <div id="your-box">
+          <h2>Я: <span id="your-blackjack-result">0</span></h2>
+        </div>
+
+        <div id="dealer-box">
+          <h2>Диллер: <span id="dealer-blackjack-result">0</span></h2>
+        </div>
+      </div>
+
+      <div class="flex-blackjack-row-2">
+        <div>
+          <button class="btn-lg btn-primary mr-2" id="blackjack-hit-button">
+            <strong>Ещё!</strong>
+          </button>
+          <button class="btn-lg btn-warning mr-2" id="blackjack-stand-button">
+            <strong>Хватит!</strong>
+          </button>
+          <button class="btn-lg btn-danger" id="blackjack-deal-button">
+            <strong>Сброс</strong>
+          </button>
+        </div>
+      </div>
+
+      <div class="flex-blackjack-row-3">
+        <table>
+          <tr>
+            <th class="th-color">Победы</th>
+            <th class="th-color">Поражения</th>
+            <th class="th-color">Ничьи</th>
+          </tr>
+
+          <tr>
+            <td class="td-color"><span id="wins">0</span></td>
+            <td class="td-color"><span id="losses">0</span></td>
+            <td class="td-color"><span id="draws">0</span></td>
+          </tr>
+        </table>
+      </div>
+      <div id="mydiv"></div>
+    </div>
+    <!-- <div id="mydiv"></div> -->
+  
+
+    <script src="./js/script.js"></script>
+    <script src="./js/menu.js"></script>
+  </body>
+</html>

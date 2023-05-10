@@ -1,0 +1,171 @@
+.container {
+  margin: auto;
+  width: 75%;
+  text-align: center;
+}
+
+.flex-row-1,
+.flex-blackjack-row-2,
+.flex-blackjack-row-3 {
+  border: 1px solid black;
+  display: flex;
+  padding: 10px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.flex-row-1,
+.flex-blackjack-row-2 {
+  background: url("https://media.istockphoto.com/vectors/poker-table-background-in-green-color-vector-id1206505233?k=6&m=1206505233&s=612x612&w=0&h=3yK8zXZmrh3-tRVtw0wY-AiTTwnqFf_mmNlIGAjlr4E=")
+    center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: #ffffff;
+}
+
+.flex-row-1 div {
+  border: 1px solid black;
+  padding: 10px;
+  height: 405px;
+  flex: 1;
+  color: aqua;
+}
+
+.flex-row-1 img {
+  width: 25%;
+  padding: 10px;
+}
+
+.flex-blackjack-row-2 button {
+  border: 1px solid black;
+  padding: 10px;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  padding: 5px;
+}
+.flex-blackjack-row-2 div {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.th-color {
+  color: black;
+  background-color: #0c6bc4;
+}
+.td-color {
+  background-color: yellow;
+}
+
+.btn-primary {
+  background-color: green;
+}
+
+.btn-warning {
+  background-color: yellow;
+}
+
+.btn-danger {
+  background-color: red;
+}
+
+.main-container {
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-menu {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+.indent-button {
+  margin-bottom: 5px;
+}
+
+/* .main-container {
+  background-color: green;
+} */
+
+.modalPrimary .modalHeader,
+.modalPrimary .modalFooter,
+.modalPrimary .modalClose {
+  background-color: #337ab7 !important;
+  border: 1px solid #337ab7;
+  color: #fff;
+  border-top: 5px;
+  /* border-width: 5px; */
+}
+
+.rul-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.memory-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.memory-modal-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalBody {
+  background-color: #ffffff;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.good-luck {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-image: url("/images/start.jpg");
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+}
+
+.game-name {
+  font-family: "Montserrat", sans-serif;
+  color: #337ab7;
+  font-size: 120px;
+  text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;
+}
+
+.btn {
+  appearance: none;
+  border: 0;
+  border-radius: 3px;
+  background: #4676d7;
+  color: #fff;
+  padding: 3px 16px;
+  font-size: 16px;
+}
+
+.link-text-color {
+  color: #ffffff;
+}
